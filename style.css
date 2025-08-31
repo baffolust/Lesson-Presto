@@ -45,6 +45,13 @@ h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
     color: var(--textColor_3);
 }
 
+/* Body */
+
+body {
+    background-color: var(--bgColor_2);
+    color: var(--textColor_1);
+}
+
 /* NavBar */
 
 .navbar{
@@ -67,3 +74,76 @@ h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
     width: 53px;
 }
 
+#navbarToggler{
+
+    background-color: var(--bgColor_1);
+    color: var(--textColor_2);
+}
+
+/* HEADER */
+
+.custom_header{
+    background-image: linear-gradient(rgb(0,0,0) 0%, transparent 15%, rgb(0,0,0) 47%, rgb(0,0,0) 53%, transparent 85%, rgb(0,0,0) 100%), url(https://hips.hearstapps.com/hmg-prod/images/gettyimages-1271527965.jpg);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+/* BUTTONS */
+
+.btn-header{
+
+    color: var(--textColor_1);
+    border: 2px solid var(--textColor_1);
+    border-radius: 20px;
+    margin: 0px 15px;
+    padding: 10px 20px;
+    transition: 0.15s;
+    
+
+}
+
+
+.btn-header:hover {
+    color: var(transparent);
+    background-color: var(--bgColor_1);
+    transform: scale(1.1);
+
+}
+
+
+/* Positioned */
+
+.positioned{
+    position: relative;
+    top: -100px;
+}
+
+.custom-card{
+
+    border: 1px solid var(--bgColor_2);
+    cursor: pointer;
+    transition: 0.38s;
+    color: var(--textColor_2);
+}
+
+.custom-card:hover {
+    transform: scale(1.1);
+    background-color: var(--bgColor_2);
+    color: var(--textColor_3);
+}
+
+.custom-card:hover .fa-brands{
+    color: white;
+    text-shadow: 2px 2px 5px var(--textColor_3), -2px -2px 5px var(--textColor_3) ;
+}
+
+@media screen and (max-width: 768px ) {
+    
+    .positioned{
+        position: static;
+    
+    }
+}

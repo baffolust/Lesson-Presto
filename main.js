@@ -1,8 +1,10 @@
 let navbar = document.querySelector('#navbar');
 let navLinks = document.querySelectorAll('.nav-link');
 let logoNavbar = document.querySelector('#logoNavbar');
+let navbarToggler = document.querySelector('#navbarToggler');
+let navContainer = document.querySelector('#navContainer');
 
-console.dir(logoNavbar);
+console.dir(navbarToggler);
 
 // WINDOW 
 // è l'oggetto che rappresenta la pagina stessa.
@@ -21,6 +23,8 @@ window.addEventListener('scroll', ()=>{
         // Cambio colore e dimensione alla navbar allo scrolling
         navbar.classList.add('bgColor_1');
         navbar.classList.remove('bgColor_2');
+        navContainer.classList.add('bgColor_1');
+        navContainer.classList.remove('bgColor_2');
         navbar.style.height = '60px';
 
 
@@ -30,13 +34,18 @@ window.addEventListener('scroll', ()=>{
             
         });
 
-
+        // Cambio colore al logo
         logoNavbar.src = './media/Logo_AirWing_Black.png'
+
+        // Cambio colore al hamburger icon
+        navbarToggler.style.border = '1px solid var(--textColor_2)';
 
         // Ritorno alle impostazioni iniziali quando scorro in alto
     } else {
         navbar.classList.remove('bgColor_1');
         navbar.classList.add('bgColor_2');
+        navContainer.classList.remove('bgColor_1');
+        navContainer.classList.add('bgColor_2');
         navbar.style.height = '100px';
 
         navLinks.forEach((navLink)=>{
@@ -45,6 +54,9 @@ window.addEventListener('scroll', ()=>{
         });
 
         logoNavbar.src = './media/Logo_AirWing_Yellow.png';
+
+        navbarToggler.style.background = 'var(--bgColor_1)';
+        navbarToggler.style.bordercolor = 'var(--textColor_2)';
     }
     
 
