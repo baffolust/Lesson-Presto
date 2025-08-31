@@ -11,14 +11,14 @@ h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
 :root {
     
     /* Background colors */
-    --bgColor_1: #FFE81F;
+    --bgColor_1: #ffe81f;
     --bgColor_2: #171717;
-    --bgColor_3: #f4f4f4;
-
+    --bgColor_3: #EB212E;
+    
     /* Text colors */
     --textColor_1: #FFE81F;
     --textColor_2: #171717;
-    --textColor_3: #f4f4f4;
+    --textColor_3: #EB212E;
     
 }
 
@@ -44,3 +44,26 @@ h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
 .textColor_3 {
     color: var(--textColor_3);
 }
+
+/* NavBar */
+
+.navbar{
+    height: 100px;
+    transition: 0.2s linear;
+}
+
+.nav-link{
+    color: var(--textColor_1);
+}
+
+.nav-link:hover{
+    
+    color: white !important;
+    text-shadow: 2px 2px 5px var(--textColor_3), -2px -2px 5px var(--textColor_3) ;
+    
+}
+
+.logo{
+    width: 53px;
+}
+
