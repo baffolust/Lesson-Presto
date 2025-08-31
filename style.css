@@ -1,0 +1,46 @@
+/* FONTS */
+*{
+    font-family: "WDXL Lubrifont TC", sans-serif;
+}
+
+h1, h2, h3, h4, .h1, .h2, .h3, .h4 {
+    font-family: "Orbitron", sans-serif;
+}
+
+
+:root {
+    
+    /* Background colors */
+    --bgColor_1: #FFE81F;
+    --bgColor_2: #171717;
+    --bgColor_3: #f4f4f4;
+
+    /* Text colors */
+    --textColor_1: #FFE81F;
+    --textColor_2: #171717;
+    --textColor_3: #f4f4f4;
+    
+}
+
+.bgColor_1 {
+    background-color: var(--bgColor_1);
+}
+
+.bgColor_2 {
+    background-color: var(--bgColor_2);
+}
+
+.bgColor_3 {
+    background-color: var(--bgColor_3);
+}
+
+.textColor_1 {
+    color: var(--textColor_1);
+}
+
+.textColor_2 {
+    color: var(--textColor_2);
+}
+.textColor_3 {
+    color: var(--textColor_3);
+}
